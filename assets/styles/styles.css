@@ -1,61 +1,95 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
+/* Existing styles */
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
-  }
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
-    8. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
+  box-sizing: border-box;
+}
 
-  a{
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-  }
-  
-  header{
-    display: flex;
-    justify-content: space-between;
-  }
+* {
+  margin: 0;
+}
 
-  header > nav > a{
-    margin-left: 15px;
-  }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 65px; /* Added padding to the header */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 15px;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+/* New styles */
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Align items vertically */
+  padding: 0 65px; /* Same padding as header for alignment */
+}
+
+.text-container {
+  max-width: 70%; /* Adjust width as needed */
+}
+
+.image-container {
+  max-width: 30%; /* Adjust width as needed */
+}
+
+.image-container img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.projects {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+.projects::after {
+  content: '';
+  display: block;
+  width: 60px; /* Adjust width as needed */
+  height: 3px; /* Adjust height as needed */
+  background-color: #fdc435; /* Adjust color as needed */
+  margin: 1px auto 0; /* Adjust spacing as needed */
+}
