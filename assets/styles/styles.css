@@ -93,3 +93,19 @@ nav a:hover {
   background-color: #fdc435; /* Adjust color as needed */
   margin: 1px auto 0; /* Adjust spacing as needed */
 }
+
+h5 {
+  font-size: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000; 
+  padding-left: 3%;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.button1{
+  background-color: #fdc435;
+  border-color: #fdc435;
+}
