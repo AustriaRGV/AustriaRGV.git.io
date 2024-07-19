@@ -94,18 +94,34 @@ nav a:hover {
   margin: 1px auto 0; /* Adjust spacing as needed */
 }
 
+.button-container {
+  display: flex; /* Make the container a flexbox */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Centers the content vertically */
+  gap: 10px; /* Add some space between the buttons */
+  margin-top: 20px; /* Add some space above the button container */
+}
+
 h5 {
   font-size: 15px;
   border-width: 1px;
   border-style: solid;
   border-color: #000; 
-  padding-left: 3%;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 30px; /* Combine padding into shorthand */
+  text-align: center; /* Center the text horizontally */
+  display: flex; /* Make the h5 a flex container */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 0; /* Remove margin to avoid any unwanted spacing */
 }
 
-.button1{
+.button1 {
   background-color: #fdc435;
   border-color: #fdc435;
+  margin-left: 0; /* Remove left margin */
+  padding-left: 0; /* Remove left padding */
+}
+
+.button2 {
+  border-color: #000;
 }
